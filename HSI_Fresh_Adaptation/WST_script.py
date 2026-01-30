@@ -255,8 +255,20 @@ def run_pipeline(n_components, preopocessing_ops, dataset_name, plots_only=False
     X_clean = X_processed[~outlier_mask]
     print(f"Number of outlier samples removed: {num_outliers}")
     print("Remaining samples:", X_clean.shape[0])
+    
+    # --- Remove classes with too few samples for stratified split ---
+    MIN_SAMPLES_PER_CLASS = 10  # Minimum samples needed for reliable train/test split
+    class_counts = X_clean.index.get_level_values('Class').value_counts()
+    small_classes = class_counts[class_counts < MIN_SAMPLES_PER_CLASS].index.tolist()
+    if small_classes:
+        print(f"\nWARNING: Removing {len(small_classes)} classes with <{MIN_SAMPLES_PER_CLASS} samples: {small_classes}")
+        # Filter out small classes
+        mask = ~X_clean.index.get_level_values('Class').isin(small_classes)
+        X_clean = X_clean[mask]
+        print(f"Samples after removing small classes: {X_clean.shape[0]}")
+    
     # Print the number of samples per class
-    print("Samples per class after outlier removal:\n", X_clean.index.get_level_values('Class').value_counts())
+    print("Samples per class after filtering:\n", X_clean.index.get_level_values('Class').value_counts())
     
     # --- Plot 1: Outlier Detection ---
     plt.figure(figsize=(10, 6))
