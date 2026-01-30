@@ -1,0 +1,9 @@
+LEARNING CURVE ANALYSIS
+======================================================================
+
+Maximum gap: 0.0026 at 25981 samples
+Minimum gap: 0.0014 at 8660 samples
+Final gap: 0.0019 at 43303 samples
+
+Overfitting detected: False
+Overfitting severity: Low

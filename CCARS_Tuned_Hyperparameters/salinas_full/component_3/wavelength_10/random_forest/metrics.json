@@ -1,0 +1,26 @@
+{
+  "selected": {
+    "classifier": "Random Forest",
+    "wavelength_type": "10_selected",
+    "n_features": 10,
+    "accuracy": 0.8253782590650115,
+    "f1_weighted": 0.8211181824189153,
+    "f1_macro": 0.8115857205569037,
+    "precision_weighted": 0.8254560310023495,
+    "recall_weighted": 0.8253782590650115,
+    "train_time": 2.8671035766601562,
+    "predict_time": 0.24378180503845215
+  },
+  "full": {
+    "classifier": "Random Forest",
+    "wavelength_type": "full_spectrum",
+    "n_features": 204,
+    "accuracy": 0.9123872769120477,
+    "f1_weighted": 0.9112618633150912,
+    "f1_macro": 0.9529638711634298,
+    "precision_weighted": 0.9120409101990864,
+    "recall_weighted": 0.9123872769120477,
+    "train_time": 11.992261171340942,
+    "predict_time": 0.2735412120819092
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "selected": {
+    "classifier": "SVM-RBF",
+    "wavelength_type": "30_selected",
+    "n_features": 30,
+    "accuracy": 0.5653364632237872,
+    "f1_weighted": 0.4888894816877896,
+    "f1_macro": 0.4408157283676968,
+    "precision_weighted": 0.6213176359186895,
+    "recall_weighted": 0.5653364632237872,
+    "train_time": 0.7063078880310059,
+    "predict_time": 2.0109784603118896
+  },
+  "full": {
+    "classifier": "SVM-RBF",
+    "wavelength_type": "full_spectrum",
+    "n_features": 200,
+    "accuracy": 0.6404538341158059,
+    "f1_weighted": 0.6068502329843536,
+    "f1_macro": 0.5398101835022381,
+    "precision_weighted": 0.6658325933350708,
+    "recall_weighted": 0.6404538341158059,
+    "train_time": 0.8527398109436035,
+    "predict_time": 2.976062059402466
+  }
+}

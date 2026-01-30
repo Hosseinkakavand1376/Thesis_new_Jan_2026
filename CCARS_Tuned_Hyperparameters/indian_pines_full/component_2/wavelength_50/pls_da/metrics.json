@@ -1,0 +1,26 @@
+{
+  "selected": {
+    "classifier": "PLS-DA",
+    "wavelength_type": "39_selected",
+    "n_features": 39,
+    "accuracy": 0.3955399061032864,
+    "f1_weighted": 0.22732523992684595,
+    "f1_macro": 0.12025803106347185,
+    "precision_weighted": 0.16030919445970923,
+    "recall_weighted": 0.3955399061032864,
+    "train_time": 0.013263940811157227,
+    "predict_time": 0.0026063919067382812
+  },
+  "full": {
+    "classifier": "PLS-DA",
+    "wavelength_type": "full_spectrum",
+    "n_features": 200,
+    "accuracy": 0.3955399061032864,
+    "f1_weighted": 0.2283633163730931,
+    "f1_macro": 0.12478217875793393,
+    "precision_weighted": 0.1619781973269344,
+    "recall_weighted": 0.3955399061032864,
+    "train_time": 0.027751684188842773,
+    "predict_time": 0.005570650100708008
+  }
+}
