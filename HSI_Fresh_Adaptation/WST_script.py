@@ -40,7 +40,7 @@ import argparse
 # ------------------------------
 def load_hsi_dataset(dataset_name):
     """Load HSI dataset (Indian Pines or Salinas) with real AVIRIS wavelengths."""
-    base_dir = r"C:\Users\hosse\Desktop\Thesis_Phase1_completed\HSI_WST_Pipeline\dataset"
+    base_dir = r"/kaggle/working/Thesis_new_Jan_2026/HSI_Fresh_Adaptation"
     wavelengths_dir = r"C:\Users\hosse\Desktop\Thesis_Phase1_completed\CCARS_Tuned_Hyperparameters"
     
     if dataset_name == 'indian_pines':
